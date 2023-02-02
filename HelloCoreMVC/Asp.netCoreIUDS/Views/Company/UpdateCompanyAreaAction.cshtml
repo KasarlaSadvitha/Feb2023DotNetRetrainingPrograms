@@ -1,0 +1,31 @@
+﻿
+@using Asp.netCoreIUDS.Repository
+@using Asp.netCoreIUDS.Models
+@{
+    ViewBag.Title = "Update Company";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login Form Page</h2>
+<html>
+<head>
+    <title>Delete Product using ID </title>
+</head>
+<body>
+    <div>
+        
+   
+       @using(Html.BeginForm("UpdateCompanyArea", "Company", FormMethod.Post)) 
+       {
+           @Html.Label("ID")
+           @Html.TextBox("Id")
+           <br />
+            @Html.Label("Area")
+            @Html.TextBox("area")
+
+            <input value="Update" type="submit">
+        }
+        
+    </div>
+</body>
+</html>

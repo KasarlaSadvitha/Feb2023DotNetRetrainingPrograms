@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <form action="/SaveRegister/Registration" method="post">
+        UserName : <input type="text" id="TxtUserName" name="UserName" value="" />
+        <br />
+        Password  : <input type="text" id="TxtPassword" name="Password" value="" />
+        <br />
+        Age : <input type="text" id="TxtAge" name="Age" value="" />
+
+        <input type="submit" name="BtnSubmit" value="Register" />
+    </form>
+
+    <div>
+
+        @using (Html.BeginForm("SaveRegister", "Registration", FormMethod.Post))
+        {
+            @Html.Label("UserName")
+            @Html.TextBox("txtUserName")
+            <br />
+
+
+            @Html.Label("Password")
+            @Html.Password("txtPassword")
+            <br />
+            <input type="submit" name="BtnSubmit" value="Register" />
+        }
+
+    </div>
+
+</body>
+</html>
+
+

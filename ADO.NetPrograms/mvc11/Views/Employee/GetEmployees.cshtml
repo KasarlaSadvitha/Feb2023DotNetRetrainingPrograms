@@ -1,0 +1,28 @@
+﻿@using mvc11.ViewModel
+@model EmployeeRecordsViewModel
+@{
+    ViewBag.Title = "GetEmployees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<a href="/Employee/AddNew"> Add New Employee</a>
+
+<h2>Employeeview</h2>
+<div>
+    <table border="1">
+        <tr>
+            <th>Employee ID </th>
+            <th>Employee Name </th>
+            <th>Salary</th>
+        </tr>
+        @foreach(EmployeeViewModel item in Model.MyEmployees)
+            {
+                <tr>
+                    <td>@item.EmployeeId</td>
+                    <td>@item.EmployeeName</td>
+                    <td style="background-color:@item.SalaryColor">@item.Salary</td>
+
+                </tr>
+            }
+    </table>
+</div>
+

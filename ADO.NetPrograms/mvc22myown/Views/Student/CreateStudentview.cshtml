@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "CreateStudentview";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
+}
+
+<h2>CreateStudentview</h2>
+<html>
+<head>
+    <title>CreateEmployee</title>
+    <script></script>
+</head>
+<body>
+    <div>
+        <form action="/Student/SaveStudent" method="post">
+            Student Id: <input type="text" id="txtStuId" name="StuId" value="" /> <br />
+            Student Name:  <input type="text" id="txtStuName" name="StuName" value="" /> <br />
+            Student Subject :  <input type="text" id="txtStuSubject" name="StuSubject" value="" /> <br />
+
+            <input type="submit" name="BtnSubmit" value="Save Student" />
+
+        </form>
+        @*This returns Student object*@
+    </div>
+</body>
+</html>
+

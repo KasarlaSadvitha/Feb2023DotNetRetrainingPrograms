@@ -1,0 +1,33 @@
+﻿@using mvc22myown.ViewModel
+@model List<StudentViewModel>
+@{
+    ViewBag.Title = "GetStudents";
+   Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+<a href="/Student/AddNew"> Add new Student </a>
+
+<h2>GetStudents</h2>
+
+
+
+<div>
+    <table border="1">
+        <tr>
+            <th>Student ID</th>
+            <th>Studnet Name</th>
+            <th>Student Subject</th>
+        </tr>
+        @foreach(StudentViewModel svm in Model)
+            {
+            <tr>
+                <td> @svm.vmId</td>
+                <td> @svm.vmName</td>
+                <td> @svm.vmSubject </td>
+
+            </tr>
+
+            }
+    </table>
+</div>
+

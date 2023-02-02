@@ -1,0 +1,45 @@
+﻿@using Asp.netCoreIUDS.Repository
+@model IEnumerable<Company>
+
+
+@{
+    ViewBag.Title = "Get Companies";
+}
+<html>
+<a href="/Company/InsertNewCompany">Inserting Companies</a>
+<br />
+<a href="/Company/DeleteCompany">Deleting Companies</a>
+<br />
+
+<a href="/Company/UpdateCompanyDetails">Update Company Details</a>
+<br />
+  
+<a href="/Company/UpdateCompanyAreaAction"> Update Company Area</a>
+<br />
+
+
+<h4>   Getting All the Company Details </h4>
+
+<div>
+    <table border="1">
+        <tr>
+            <th>Company ID</th>
+            <th>Company Name</th>
+            <th>Company Area</th>
+            <th>Company No of Branches</th>
+        </tr>
+        @foreach (Company comp in Model)
+        {
+            <tr>
+                <td>@comp.CompanyId</td>
+                <td>@comp.CompanyName</td>
+                <td>@comp.CompanyArea</td>
+                <td>@comp.CompanyNBranches</td>
+            </tr>
+        }
+
+
+    </table>
+</div>
+</html>
+

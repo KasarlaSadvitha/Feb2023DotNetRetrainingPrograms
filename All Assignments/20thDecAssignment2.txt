@@ -1,0 +1,36 @@
+Arrays
+
+Write a  Program to assign integer to an array  and then print the following
+
+ Average value of Array elements
+Minimum and Maximum value in an array
+    15 Min
+
+Write a program in C# to accept ten marks and display the
+following
+
+Total
+Average
+Minimum marks
+Maximum marks
+Display marks in ascending order
+Display marks in descending order
+ 
+
+25 Min
+
+ 
+
+Strings Assignment
+
+Write a program in C# to accept a word from the user and display the length of it.(15 min)
+Write a program in C# to accept a word from the user and display the reverse of it.
+20 min
+
+Write a program in C# to accept two words from user and find out if they are same.
+15 min
+
+ 
+
+Write a program in C# to accept a word and to find out whether the given word is a palindrome or not.
+ 15 min

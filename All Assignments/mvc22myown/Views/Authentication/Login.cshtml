@@ -1,0 +1,31 @@
+﻿ @model mvc22myown.Models.UserDetail   
+@using mvc22myown.DataAccessLayer
+@using mvc22myown.Models
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login Form Page</h2>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("DoLogin", "Authentication", FormMethod.Post))
+        {
+            @Html.LabelFor(c => c.UserName)
+            @Html.TextBoxFor(x => x.UserName)
+            <br />     @*Here UserName ,Password is trken from UserDetail Class *@
+            @Html.LabelFor(c => c.Password)
+            @Html.PasswordFor(x=> x.Password)
+            <br/>
+            <input type="submit" name="BtnSubmit" value="Login"/>
+        }
+        @*This returns UserDetail obbject*@
+    </div>
+</body>
+</html>
+
+

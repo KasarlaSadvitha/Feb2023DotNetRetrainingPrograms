@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*@model Asp.netCoreIUDS.Models.Company  *@
+@using Asp.netCoreIUDS.Repository
+@using Asp.netCoreIUDS.Models
+@{
+    ViewBag.Title = "Delete Company";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login Form Page</h2>
+<html>
+<head>
+    <title>Delete Product using ID </title>
+</head>
+<body>
+    <div>
+        @*@using (Html.BeginForm("DeleteParticularCompany", "Company", FormMethod.Post))
+        {
+            @Html.Label("Id")
+            @Html.TextBox("Id")
+           
+           // @Html.Textbox("Id")
+            
+            <input type="submit" name="BtnSubmit" value="Delete" />
+        }*@
+   
+       @using(Html.BeginForm("DeleteParticularCompany", "Company", FormMethod.Post)) 
+       {
+            @Html.TextBox("Id")
+
+            <input value="Envoyer" type="submit">
+        }
+        
+    </div>
+</body>
+</html>
+
+

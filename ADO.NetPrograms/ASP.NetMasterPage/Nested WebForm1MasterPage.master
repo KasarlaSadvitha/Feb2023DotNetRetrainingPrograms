@@ -1,0 +1,3 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Nested WebForm1MasterPage.master.cs" Inherits="ASP.NetMasterPage.Nested_WebForm1MasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+</asp:Content>

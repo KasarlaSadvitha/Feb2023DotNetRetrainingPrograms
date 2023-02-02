@@ -1,0 +1,33 @@
+﻿@using Asp.netCoreIUDS.Repository
+@using Asp.netCoreIUDS.Models
+@model Asp.netCoreIUDS.Models.Company
+
+@{
+    ViewBag.Title = "Insert new company";
+}
+
+<html>
+    <div>
+    <form action="/Company/NewCompany" method="post" >
+         
+          Company Name: <input type="text" id="TxtCName" name="CompanyName" value=""/>
+        Company Area: <input type="text" id="TxtAName" name="CompanyArea" value=""/>
+          Company No Employees: <input type="text" id="TxtNName" name="CompanyNBranches" value=""/>
+
+          <input type="submit" name="btnSubmit" value="NewCompany"/>
+
+        
+
+    </form>
+
+    @* @using(Html.BeginForm("NewCompany", "Company", FormMethod.Post)) 
+       {
+           @Html.TextBox("Company Id")
+            @Html.TextBox("Company Name")
+             @Html.TextBox("Company Area")
+              @Html.TextBox("Company N Employee")
+
+            <input value="Create Student" type="submit">
+        }*@
+        </div>
+</html>
